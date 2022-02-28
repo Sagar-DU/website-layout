@@ -1,5 +1,6 @@
 body {
     margin: auto 0;
+    font-family: arial;
 }
 
 .zone {
@@ -19,6 +20,13 @@ body {
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box:hover {
+    -webkit-transform:rotate(-6deg);
+    -moz-tansform:rotate(-6deg);
+    -o-transform:rotate(-6deg);
+    box-shadow:rotate(-6deg);
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
@@ -84,6 +92,12 @@ body {
     margin: 0;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 @media only screen and (max-width: 750px) {
     .main-nav {
         font-size: 0.5em;
@@ -110,6 +124,10 @@ a {
     align-items: center;
     justify-content: center;
     height: 50vh;
+}
+
+.cover {
+    width: 20rem;
 }
 
 /*Project Grid*/
